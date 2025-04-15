@@ -13,6 +13,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE TRUE)
 #Final compilation all platforms
 #Removing debugging for final compilation
 set(CMAKE_SKIP_RPATH TRUE)
+set(CMAKE_C_FLAGS "-Wno-int-conversion")
 set(CMAKE_EXE_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=/lib/")
 set(CMAKE_SHARED_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=/lib/")
 set(CMAKE_MODULE_LINKER_FLAGS " -Wl,-rpath=/usr/local/lib/,-rpath=/usr/lib/,-rpath=/lib/")
